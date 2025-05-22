@@ -2,61 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Request a Service | Profile Updated Center</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .service-box {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 2px solid #ccc;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .service-box h3 {
+      margin: 0 0 10px;
+      color: #111;
+    }
+    .service-box p {
+      margin: 0;
+      color: #555;
+    }
+    form {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+    }
+    .cta {
+      margin-top: 30px;
+      background: #e6f2ff;
+      padding: 20px;
+      border-left: 5px solid #007bff;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #004080;
+    }
+    .cta a {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <div class="max-w-4xl mx-auto p-6">
-    <h1 class="text-3xl font-bold text-center mb-6">Request a Service</h1>
-    <p class="text-center text-lg mb-10">Ready to upgrade your career? Choose a service and let's help you land that job.</p>
+<body>
+  <div class="container">
+    <h1>Request a Service</h1>
+    <p class="intro">Ready to upgrade your career? Choose a service and let's help you land that job.</p>
 
-    <div class="space-y-6 text-sm text-gray-700 mb-10">
-      <p>• <strong>Job Recommendations service:</strong> For this service, we help you update your CVs and Optimize LinkedIn profiles, giving clients access to job opportunities as they become available. Clients will be responsible for applying for the jobs themselves.</p>
-      <p>• <strong>Account Management Service:</strong> Our Account Management Service is designed to take the pressure off your job search by managing and maintaining up to four key accounts on your behalf.</p>
-      <p>• <strong>Job Offer Service:</strong> Let Us Do the Work for You; This comprehensive service covers everything necessary to enhance your job search and connect you with companies that align with your expertise, niche, and discipline. We don’t just assist you—we represent you.</p>
-      <p>• <strong>Career & Academic Consultations:</strong> Strategy sessions for job or school applications, personal branding, and more.</p>
-      <p>• <strong>LinkedIn & Upwork Optimization:</strong> We enhance your profiles to attract recruiters and top clients online.</p>
-      <p>• <strong>CV & Cover Letter Writing:</strong> Professionally crafted documents tailored to your target roles and industries.</p>
-      <p>• <strong>Teen Tech Class Program:</strong> This service is designed for your kids. We presently have some kids enroll in our class. We promise to build your kid for the future in their tech journey.</p>
-      <p>• <strong>Survey Service:</strong> We provide this service for people who will like to earn token by executing small task and get paid instantly. We share some survey websites where you can earn little extra income.</p>
-      <p>• <strong>Freelance Training:</strong> Wouldn't you love to be under our training for your journey in freelancing and tech? Trust me, it worth it. We build you up and also share some opportunities with you.</p>
-      <p>• <strong>Graduate School Research:</strong> This program is design for anyone who will love to study in abroad. We help you to submit your application, assist you in sharing some information like; free application waiver, founding schools and so on. We are the right one for this. Get in touch with us.</p>
+    <!-- Service List -->
+    <div class="service-box">
+      <h3>Job Recommendations Service</h3>
+      <p>For this service, we help you update your CVs and Optimize LinkedIn profiles, giving clients access to job opportunities as they become available. Clients will be responsible for applying for the jobs themselves.</p>
+    </div>
+    <div class="service-box">
+      <h3>Account Management Service</h3>
+      <p>Our Account Management Service is designed to take the pressure off your job search by managing and maintaining up to four key accounts on your behalf.</p>
+    </div>
+    <div class="service-box">
+      <h3>Job Offer Service</h3>
+      <p>Let Us Do the Work for You; This comprehensive service covers everything necessary to enhance your job search and connect you with companies that align with your expertise, niche, and discipline. We don’t just assist you—we represent you.</p>
+    </div>
+    <div class="service-box">
+      <h3>Career & Academic Consultations</h3>
+      <p>Strategy sessions for job or school applications, personal branding, and more.</p>
+    </div>
+    <div class="service-box">
+      <h3>UK/US/Canada Indeed Profile Optimization</h3>
+      <p>Stand out on top job boards! We’ll professionally optimize your Indeed profile to increase visibility and match with international recruiters. Get discovered and take a step closer to landing that dream role abroad.</p>
+    </div>
+    <div class="service-box">
+      <h3>LinkedIn & Upwork Optimization</h3>
+      <p>We enhance your profiles to attract recruiters and top clients online.</p>
+    </div>
+    <div class="service-box">
+      <h3>CV & Cover Letter Writing</h3>
+      <p>Professionally crafted documents tailored to your target roles and industries.</p>
+    </div>
+    <div class="service-box">
+      <h3>Teen Tech Class Program</h3>
+      <p>This service is designed for your kids. We presently have some kids enroll in our class. We promise to build your kid for the future in their tech journey.</p>
+    </div>
+    <div class="service-box">
+      <h3>Survey Service</h3>
+      <p>We provide this service for people who will like to earn token by executing small task and get paid instantly. We share some survey websites where you can earn little extra income.</p>
+    </div>
+    <div class="service-box">
+      <h3>Freelance Training</h3>
+      <p>Wouldn't you love to be under our training for your journey in freelancing and tech? Trust me, it worth it. We build you up and also share some opportunities with you.</p>
+    </div>
+    <div class="service-box">
+      <h3>Graduate School Research</h3>
+      <p>This program is design for anyone who will love to study in abroad. We help you to submit your application, assist you in sharing some information like; free application waiver, founding schools and so on. We are the right one for this. Get in touch with us.</p>
     </div>
 
-    <form class="bg-white p-6 rounded-xl shadow space-y-4">
-      <h3 class="text-xl font-semibold mb-4">Submit Your Request</h3>
-      <input type="text" placeholder="Full Name" class="w-full border border-gray-300 p-3 rounded-md" required />
-      <input type="email" placeholder="Email Address" class="w-full border border-gray-300 p-3 rounded-md" required />
-      <input type="text" placeholder="WhatsApp Number (Optional)" class="w-full border border-gray-300 p-3 rounded-md" />
-
-      <select class="w-full border border-gray-300 p-3 rounded-md" required>
+    <!-- Contact Form -->
+    <form action="https://formsubmit.co/info@samprofileupdatedcenter.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="whatsapp" placeholder="Your WhatsApp Number (Optional)" />
+      <select name="service" required>
         <option value="">Select a Service</option>
-        <option>LinkedIn Profile Optimization_$10</option>
-        <option>Upwork Profile Optimization full package_$30</option>
-        <option>CV Revamp ATS Format for both job and Visa Sponsorship job_$15</option>
-        <option>Well Writing of a Cover Letter & Resume_$15</option>
-        <option>Career & Academic Consultation_$25</option>
-        <option>Job Recommendations Service_$25</option>
-        <option>Account Management Service (Monthly)_$85</option>
-        <option>Job Offer Service(One-time payment)_$150</option>
-        <option>Teen Tech Class Program (Monthly)_$85</option>
-        <option>Survey Service_$15</option>
-        <option>Freelance Training_$45</option>
-        <option>Graduate School Research_$20</option>
+        <option value="LinkedIn Profile Optimization">LinkedIn Profile Optimization - $10</option>
+        <option value="Upwork Profile Optimization full package">Upwork Profile Optimization full package - $30</option>
+        <option value="CV Revamp ATS Format">CV Revamp ATS Format for both job and Visa Sponsorship job - $15</option>
+        <option value="Cover Letter & Resume">Well Writing of a Cover Letter & Resume - $15</option>
+        <option value="Career & Academic Consultation">Career & Academic Consultation - $25</option>
+        <option value="UK/US/Canada Indeed Profile Optimization">UK/US/Canada Indeed Profile Optimization - $10</option>
+        <option value="Job Recommendations Service">Job Recommendations Service - $25</option>
+        <option value="Account Management Service">Account Management Service (Monthly) - $85</option>
+        <option value="Job Offer Service">Job Offer Service (US/Canada/Australia - $150, UK/EU - £150)</option>
+        <option value="Teen Tech Class Program">Teen Tech Class Program (Monthly) - $85</option>
+        <option value="Survey Service">Survey Service - $15</option>
+        <option value="Freelance Training">Freelance Training - $45</option>
+        <option value="Graduate School Research">Graduate School Research - $20</option>
       </select>
-
-      <input type="file" class="w-full border border-gray-300 p-3 rounded-md" />
-      <textarea placeholder="Tell us more about your request..." class="w-full border border-gray-300 p-3 rounded-md h-32"></textarea>
-
-      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition">Submit Request</button>
+      <textarea name="message" placeholder="Tell us more about what you need..." rows="5"></textarea>
+      <input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png" />
+      <button type="submit">Submit Request</button>
     </form>
 
-    <div class="mt-8 text-center">
-      <p>Need help before submitting? 
-        <a href="mailto:m@samprofileupdatedcenter.com" class="text-blue-600 font-semibold">Contact us</a> or 
-        <a href="https://wa.me/message/52C5ZJAHQ6YZL1" class="text-green-600 font-semibold" target="_blank">Chat with us on WhatsApp</a>.
-      </p>
+    <!-- CTA -->
+    <div class="cta">
+      <p>We're more than a service—we're your partner in progress. Let's get you your dream job.<br />
+      Got questions or need help choosing the right service? <a href="https://wa.me/message/52C5ZJAHQ6YZL1">Talk to us now on WhatsApp</a>.</p>
     </div>
   </div>
 </body>
